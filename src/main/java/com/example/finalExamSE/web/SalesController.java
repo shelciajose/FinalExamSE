@@ -1,5 +1,10 @@
 package com.example.finalExamSE.web;
 
+
+/*Name : Shelcia Jose
+        ID : 300365479
+        Git : https://github.com/shelciajose/FinalExamSE*/
+
 import com.example.finalExamSE.entities.*;
 import com.example.finalExamSE.repositories.categoryRepository;
 import com.example.finalExamSE.repositories.itemsRepository;
@@ -14,6 +19,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
+
 
 @SessionAttributes({"a", "e", "rec", "qtys", "exists"})
 @Controller
