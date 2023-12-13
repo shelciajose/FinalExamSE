@@ -36,8 +36,7 @@ public class SalesController {
     private categoryRepository cRepository;
 
 
-
-
+    // controller for loading main page
     @GetMapping(path = "/index")
     public String saless(Model model, ModelMap mm, @RequestParam(name = "keyword", defaultValue = "") String keyword) {
 
@@ -94,6 +93,7 @@ public class SalesController {
     }
 
 
+    // controller for deleting sales data
     @GetMapping("/delete")
     public String delete(Long id) {
         saleRepository.deleteById(id);
@@ -108,6 +108,7 @@ public class SalesController {
         return "formSales";
     }
 
+    // controller for saving edited data
     @PostMapping(path="/save")
     public String save(Model model, @ModelAttribute("sales") sales sale, BindingResult bindingResult, ModelMap mm, HttpSession session) {
 
@@ -185,6 +186,7 @@ public class SalesController {
     }
 
 
+    // controller for editing sales table
 
     @GetMapping("/editSales")
     public String editSales(Model model, Long id, HttpSession session) {

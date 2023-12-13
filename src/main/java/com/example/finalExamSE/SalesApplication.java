@@ -13,6 +13,8 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.Date;
 
+
+// For adding initial data to the table
 @SpringBootApplication
 public class SalesApplication {
 
